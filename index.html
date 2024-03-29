@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Porfolio</title>
+    <link href="./style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -56,7 +57,7 @@
         font-family: "Parisienne", cursive;
         font-weight: 400;
         font-style: normal;
-        font-size: 30px;
+        font-size: 33px;
         padding-left: 55px;
       }
 
@@ -86,10 +87,6 @@
         margin: 240px 102px;
       }
 
-      /* .right {
-        margin: ;
-      } */
-
       .image {
         width: 20rem;
         height: 22rem;
@@ -111,6 +108,7 @@
         color: #bda5f5;
       }
 
+      .experience-section,
       .my-desc {
         font-family: "Poppins", sans-serif;
         background: linear-gradient(
@@ -123,7 +121,9 @@
       }
 
       .about-heading,
-      .porfolio-heading {
+      .porfolio-heading,
+      .Experience-heading,
+      .contact-heading {
         font-size: 45px;
         color: #bda5f5;
         font-weight: 500;
@@ -151,9 +151,11 @@
         background-color: rgb(140, 140, 200);
         width: 184px;
         height: 5px;
+        margin-left: 6.5rem;
       }
 
-      .portfolio-desc {
+      .portfolio-desc,
+      .contact-section {
         background: linear-gradient(
           180deg,
           rgb(51 21 92) 0%,
@@ -161,9 +163,55 @@
         );
         height: 100vh;
       }
-      .porfolio-heading,
-      .underline-portfolio {
-        margin: 6.5rem;
+      .porfolio-heading {
+        padding-left: 6.5rem;
+      }
+      .Experience-underline {
+        background-color: rgb(140, 140, 200);
+        width: 246px;
+        height: 5px;
+        margin-bottom: 20px;
+      }
+      .Experience-desc,
+      .contact-desc {
+        font-size: 16px;
+        color: whitesmoke;
+      }
+      #box {
+        background-color: whitesmoke;
+        width: 325px;
+        height: 180px;
+        border: 2px solid black;
+      }
+
+      .box-top,
+      .box-below {
+        display: flex;
+        justify-content: flex-start;
+        gap: 70px;
+        text-align: center;
+        padding-right: 130px;
+      }
+
+      .box-top {
+        margin-bottom: 70px;
+        margin-top: 45px;
+      }
+
+      .contact-form {
+        margin-left: 24rem;
+        margin-top: 2rem;
+      }
+
+      .contact-underline {
+        background-color: rgb(140, 140, 200);
+        width: 190px;
+        height: 5px;
+        margin-bottom: 20px;
+      }
+
+      .contact-section {
+        padding-left: 105px;
       }
     </style>
   </head>
@@ -219,11 +267,126 @@
       <div class="porfolio-heading">Portfolio</div>
       <div class="underline-portfolio"></div>
     </section>
+    <section class="experience-section">
+      <div class="Experience-heading">Experience</div>
+      <div class="Experience-underline"></div>
+
+      <div class="Experience-desc">These are technologies I've worked with</div>
+
+      <div class="Experience-container">
+        <div class="box-top">
+          <div
+            class="w-96 h-38 py-2 shadow-md shadow-orange-500 hover:scale-105 duration-500 rounded-lg"
+          >
+            <img
+              class="w-20 mx-auto"
+              src="	https://splendid-marzipan-9911ee.netlify.app/static/media/html.2ba4fabc69a89a8f71e6.png"
+              alt=""
+            />
+            <div class="py-4 text-lg text-white" id="box-1-content ">HTML</div>
+          </div>
+          <div
+            class="w-96 h-38 py-2 shadow-md shadow-blue-500 hover:scale-105 duration-500 rounded-lg"
+          >
+            <img
+              class="w-20 mx-auto"
+              src="	https://splendid-marzipan-9911ee.netlify.app/static/media/css.69a82c2d9e45c933a9cb.png"
+              alt=""
+            />
+            <div
+              class="py-4 text-lg text-white text-centers"
+              id="box-1-content"
+            >
+              CSS
+            </div>
+          </div>
+          <div
+            class="w-96 h-38 py-2 shadow-md shadow-yellow-500 hover:scale-105 duration-500 rounded-lg"
+          >
+            <img
+              class="w-20 mx-auto"
+              src="	https://splendid-marzipan-9911ee.netlify.app/static/media/javascript.1ccd6ef9bb1f9c84ef00.png"
+              alt=""
+            />
+            <div class="py-4 text-lg text-white" id="box-1-content ">
+              JavaScript
+            </div>
+          </div>
+        </div>
+        <div class="box-below">
+          <div
+            class="w-96 h-38 py-2 shadow-md shadow-blue-600 hover:scale-105 duration-500 rounded-lg"
+          >
+            <img
+              class="w-20 mx-auto"
+              src="https://splendid-marzipan-9911ee.netlify.app/static/media/react.0cf951a69d8e58f83f9d.png"
+              alt=""
+            />
+            <div class="py-4 text-lg text-white" id="box-1-content ">React</div>
+          </div>
+          <div
+            class="w-96 h-38 py-2 shadow-md shadow-sky-400 hover:scale-105 duration-500 rounded-lg"
+          >
+            <img
+              class="w-20 mx-auto"
+              src="https://splendid-marzipan-9911ee.netlify.app/static/media/tailwind.e47ac876b8d4d0bba47a.png"
+              alt=""
+            />
+            <div class="py-4 text-lg text-white" id="box-1-content ">
+              Tailwind
+            </div>
+          </div>
+          <div
+            class="w-96 h-38 py-2 shadow-md shadow-gray-500 hover:scale-105 duration-500 rounded-lg"
+          >
+            <img
+              class="w-20 mx-auto"
+              src="https://splendid-marzipan-9911ee.netlify.app/static/media/github.3b9e32903aa89111875d.png"
+              alt=""
+            />
+            <div class="py-4 text-lg text-white" id="box-1-content ">
+              GitHub
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-heading">Contact</div>
+      <div class="contact-underline"></div>
+      <div class="contact-desc">
+        Submit the form below to get in touch with me
+      </div>
+      <form class="contact-form flex flex-col w-1/2">
+        <input
+          type="text"
+          placeholder="Enter your name"
+          class="p-2 bg-transparent border-2 rounded-2 rounded-md text-white focus:outline-none m-3"
+        />
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="p-2 bg-transparent border-2 rounded-2 rounded-md text-white focus:outline-none m-3"
+        />
+        <textarea
+          class="p-2 bg-transparent border-2 rounded-2 rounded-md text-white focus:outline-none m-3"
+          cols="30"
+          rows="10"
+          placeholder="Enter your message "
+        ></textarea>
+      </form>
+      <button
+        class="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
+      >
+        Lets's talk
+      </button>
+    </section>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
-        strings: ["Web Devloper..!!"],
+        strings: ["Front End Devloper..!!", "Web Devloper..!!"],
         typeSpeed: 50,
       });
     </script>
