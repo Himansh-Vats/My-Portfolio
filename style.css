@@ -1,3 +1,215 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .top-section {
+    background: linear-gradient(
+      180deg,
+      rgb(51 21 92) 0%,
+      rgb(61 50 84) 87%
+    );
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 50px;
+    color: whitesmoke;
+    display: flex;
+  }
+
+  .navbar {
+    background-color: rgb(52, 52, 96);
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 18px;
+    gap: 20rem;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .name {
+    color: rgb(140, 140, 200);
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    padding-left: 55px;
+    margin-top: -7px;
+  }
+
+  .nav-element ul li {
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .nav-element ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    margin: 30px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(140, 140, 200);
+  }
+  .nav-element ul li a:hover {
+    color: #bda5f5;
+  }
+
+  .elements {
+    display: flex;
+    justify-content: space-around;
+    padding: 9px;
+  }
+
+  .left {
+    margin: 240px 102px;
+  }
+
+  .image {
+    width: 20rem;
+    height: 22rem;
+    position: relative;
+    right: 8rem;
+    top: 11rem;
+    border-radius: 10px;
+    margin-left: 12rem;
+  }
+
+  .purple {
+    color: #bda5f5;
+  }
+
+  #element {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 50px;
+    color: #bda5f5;
+  }
+
+  .experience-section,
+  .my-desc {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(
+      180deg,
+      rgb(61 50 84) 0%,
+      rgb(51 21 92) 87%
+    );
+    height: 100vh;
+    padding-left: 6.5rem;
+  }
+
+  .about-heading,
+  .porfolio-heading,
+  .Experience-heading,
+  .contact-heading {
+    font-size: 45px;
+    color: #bda5f5;
+    font-weight: 500;
+  }
+  .underline {
+    background-color: rgb(140, 140, 200);
+    width: 138px;
+    height: 5px;
+  }
+  .about {
+    width: 81rem;
+    font-size: 25px;
+  }
+
+  .first-para {
+    margin: 40px 0 15px 2px;
+    color: whitesmoke;
+  }
+
+  .second-para {
+    color: whitesmoke;
+  }
+
+  .underline-portfolio {
+    background-color: rgb(140, 140, 200);
+    width: 184px;
+    height: 5px;
+    margin-left: 6.5rem;
+  }
+
+  .portfolio-section,
+  .contact-section {
+    background: linear-gradient(
+      180deg,
+      rgb(51 21 92) 0%,
+      rgb(61 50 84) 87%
+    );
+    height: 100vh;
+    color: whitesmoke;
+  }
+  .porfolio-heading {
+    padding-left: 6.5rem;
+  }
+  .Experience-underline {
+    background-color: rgb(140, 140, 200);
+    width: 246px;
+    height: 5px;
+    margin-bottom: 20px;
+  }
+  .Experience-desc,
+  .contact-desc,
+  .portfolio-desc {
+    font-size: 16px;
+    color: whitesmoke;
+  }
+  .portfolio-desc {
+    padding-left: 6.5rem;
+    margin: 40px 0 15px 2px;
+  }
+  #box {
+    background-color: whitesmoke;
+    width: 325px;
+    height: 180px;
+    border: 2px solid black;
+  }
+
+  .box-top,
+  .box-below {
+    display: flex;
+    justify-content: flex-start;
+    gap: 70px;
+    text-align: center;
+    padding-right: 130px;
+  }
+
+  .box-top {
+    margin-bottom: 70px;
+    margin-top: 45px;
+  }
+
+  .contact-form {
+    margin-left: 24rem;
+    margin-top: 2rem;
+  }
+
+  .contact-underline {
+    background-color: rgb(140, 140, 200);
+    width: 190px;
+    height: 5px;
+    margin-bottom: 20px;
+  }
+
+  .contact-section {
+    padding-left: 105px;
+  }
+
+  .portfolio-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 6.5rem;
+    margin: 40px 0 15px 2px;
+  }
